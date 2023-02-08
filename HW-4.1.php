@@ -140,24 +140,24 @@ $experience = [
         <div class="w3-container w3-card w3-white w3-margin-bottom">
           <h2 class="w3-text-grey w3-padding-16"><i
               class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Опыт работы</h2>
-                <?php for ($j = 0; $j < count($experience); $j++):?>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b><?php echo $experience[$j]['work']; ?></b></h5>
-                        <h6 class="w3-text-teal">
-                            <i class="fa fa-calendar fa-fw w3-margin-right"></i>
-                            <?php echo $experience[$j]['beginWork']; ?> - 
-                            <?php if ($j == 0):?>
-                            <span class="w3-tag w3-teal w3-round">
-                                <?php echo $experience[$j]['endWork']; ?>
-                            </span>
-                            <?php else: ?>
-                                <?php echo $experience[$j]['endWork']; ?>
-                            <?php endif; ?>
-                        </h6>
-                        <p><?php echo $experience[$j]['describtion']; ?></p>
-                        <hr>
-                    </div>
-                <?php endfor; ?>
+          <?php for ($j = 0; $j < count($experience); $j++):?>
+              <div class="w3-container">
+                  <h5 class="w3-opacity"><b><?php echo $experience[$j]['work']; ?></b></h5>
+                  <h6 class="w3-text-teal">
+                      <i class="fa fa-calendar fa-fw w3-margin-right"></i>
+                      <?php echo $experience[$j]['beginWork']; ?> - 
+                        <?php if ($j == 0):?>
+                        <span class="w3-tag w3-teal w3-round">
+                            <?php echo $experience[$j]['endWork']; ?>
+                        </span>
+                        <?php else: ?>
+                            <?php echo $experience[$j]['endWork']; ?>
+                        <?php endif; ?>
+                  </h6>
+                  <p><?php echo $experience[$j]['describtion']; ?></p>
+                  <hr>
+              </div>
+          <?php endfor; ?>
         </div>
  
         <div class="w3-container w3-card w3-white">
